@@ -7,9 +7,7 @@ import CallButton from './Call'
 function App() {
   return (
     <>
-   {/* <Home /> */}
-   <WhatsAppButton /> <br />
-   <CallButton/>
+   <Home />
     </>
   )
 }

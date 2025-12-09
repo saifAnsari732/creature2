@@ -1,8 +1,9 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 function WhatsAppButton() {
   const phoneNumber = "919905234866"; 
-  const message = "Hello, I'm interested in your services!"; 
+  const message = "Hello, I'm interested in your services!Plz provide more details."; 
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   
@@ -12,8 +13,8 @@ function WhatsAppButton() {
   };
   
   return (
-    <button onClick={handleClick} className="whatsapp-button px-6 py-6 bg-green-500 text-white rounded-full top-4 left-4 shadow-lg hover:bg-green-600 transition duration-300">
-      Contact on WhatsApp
+    <button onClick={handleClick} className=" btn-secondary flex justify-center items-center gap-2 ">
+            <FaWhatsapp size={22} color='green' />  WhatsApp
     </button>
   );
 }
