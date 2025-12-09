@@ -10,6 +10,7 @@ import Footer from './Footer';
 import MobileNavbar from './Navigation';
 import CallButton from './Call';
 import WhatsAppButton from './whatsapp';
+import { FaSearch } from "react-icons/fa";
 
 function Home() {
     return (
@@ -28,7 +29,7 @@ function Home() {
             </header>
 
             {/* Hero Section with Video */}
-            <section className="hero-video-section">
+            <section id='home' className="hero-video-section">
                 <video 
                     src={machineryvideo} 
                     className="hero-video" 
@@ -43,7 +44,10 @@ function Home() {
                         <p className="hero-subtitle">
                             Your One-Stop Shop for Industrial Machinery - Food processing machines covering washing, cutting, mixing, cooking, and packaging
                         </p>
-                        <div className="hero-buttons">
+                        {/* <FaSearch size={27} className=' inline   mb-3.5  '/> */}
+
+                        {/* <input type="text" id='serch' className='border-1 rounded-2xl px-4 py-6 h-8 w-[300px] placeholder:col border-gray-400 ' placeholder='Serach here' name=""  /> */}
+                        <div className="hero-buttons ">
                             <a href='#products' className="cta-button">Explore Now</a>
                             <button className="cta-button2">Quick View</button>
                         </div>

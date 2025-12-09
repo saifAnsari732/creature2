@@ -226,10 +226,11 @@ body {
 
 .hero-buttons {
     display: flex;
-    gap: clamp(0.8rem, 2vw, 1.5rem);
+    gap: clamp(1.8rem, 5vw, 1.5rem);
     flex-wrap: wrap;
     justify-content: center;
     animation: slideInRight 0.8s ease;
+    margin-top: 15px;
 }
 
 /* Products Section */
