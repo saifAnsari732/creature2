@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, Search, Film, User } from "lucide-react";
+import { Home, Search,  User, ChartBar } from "lucide-react";
 // import {Link} from 'react-router-dom';
 export default function MobileNavbar() {
   return (
@@ -15,7 +15,7 @@ export default function MobileNavbar() {
       </div>
 
       <div className="flex flex-col items-center text-black">
-        <Film size={24} />
+        <ChartBar size={24} />
         <a href="#products" className="text-md mt-1">Products</a>
       </div>
 
