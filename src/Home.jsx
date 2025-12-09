@@ -11,7 +11,12 @@ import MobileNavbar from './Navigation';
 import CallButton from './Call';
 import WhatsAppButton from './whatsapp';
 import { FaSearch } from "react-icons/fa";
-
+// VIDEO ICON
+import v1 from '../public/videoicon/big-sale.mp4';
+import v2 from '../public/videoicon/sale.mp4';
+import v3 from '../public/videoicon/sales1.mp4';
+import v4 from '../public/videoicon/sales2.mp4';
+import v5 from '../public/videoicon/sales.mp4';
 function Home() {
     return (
         <div className="home-page">
@@ -63,7 +68,15 @@ function Home() {
                     <div className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage2} alt="Industrial Robot" />
-                            <span className="discount-badge">20% OFF</span>
+                            {/* <span className="discount-badge">  </span> */}
+                            <video 
+                            className='discount-badge h-12 rounded-full '
+                            src={v1} 
+                              autoPlay 
+                              loop 
+                              muted
+                             playsInline >
+                    </video>
                         </div>
                         <div className="card-content">
                             <h3>Heavy Duty Industrial Robot</h3>
@@ -87,7 +100,15 @@ function Home() {
                     <div className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage} alt="Industrial Robot" />
-                            <span className="discount-badge">20% OFF</span>
+                            {/* <span className="discount-badge">20% OFF</span> */}
+                              <video 
+                            className='discount-badge h-12 rounded-full '
+                            src={v2} 
+                              autoPlay 
+                              loop 
+                              muted
+                             playsInline >
+                    </video>
                         </div>
                         <div className="card-content">
                             <h3>Heavy Duty Industrial Robot</h3>
@@ -111,7 +132,16 @@ function Home() {
                     <div className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage3} alt="Industrial Robot" />
-                            <span className="discount-badge">20% OFF</span>
+                           
+                            {/* <span className="discount-badge">20% OFF</span> */}
+                              <video 
+                            className='discount-badge h-12 rounded-full '
+                            src={v3} 
+                              autoPlay 
+                              loop 
+                              muted
+                             playsInline >
+                    </video>
                         </div>
                         <div className="card-content">
                             <h3>Heavy Duty Industrial Robot</h3>
@@ -135,7 +165,15 @@ function Home() {
                     <div className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage5} alt="Industrial Robot" />
-                            <span className="discount-badge">30% OFF</span>
+                            {/* <span className="discount-badge">30% OFF</span> */}
+                              <video 
+                            className='discount-badge h-12 rounded-full '
+                            src={v4} 
+                              autoPlay 
+                              loop 
+                              muted
+                             playsInline >
+                    </video>
                         </div>
                         <div className="card-content">
                             <h3>Heavy Duty Industrial Robot</h3>
@@ -159,7 +197,15 @@ function Home() {
                     <div className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage2} alt="Industrial Robot" />
-                            <span className="discount-badge">20% OFF</span>
+                            {/* <span className="discount-badge">20% OFF</span> */}
+                             <video 
+                            className='discount-badge h-12 rounded-full '
+                            src={v5} 
+                              autoPlay 
+                              loop 
+                              muted
+                             playsInline >
+                    </video>
                         </div>
                         <div className="card-content">
                             <h3>Heavy Duty Industrial Robot</h3>
@@ -183,7 +229,15 @@ function Home() {
                     <div className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage2} alt="Industrial Robot" />
-                            <span className="discount-badge">10% OFF</span>
+                            {/* <span className="discount-badge">10% OFF</span> */}
+                               <video 
+                            className='discount-badge h-12 rounded-full '
+                            src={v3} 
+                              autoPlay 
+                              loop 
+                              muted
+                             playsInline >
+                    </video>
                         </div>
                         <div className="card-content">
                             <h3>Heavy Duty Industrial Robot</h3>
