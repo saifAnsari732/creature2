@@ -15,7 +15,7 @@ const phoneNumber = "919905234866";
 
   const message = `Hello, I'm interested in your machinery products! 
 Please provide more details about pricing and specifications.
-Check Out My Details :- NAME= ${name} EMAIL= ${email} LOCATION= ${location}!   ${imageULR}`; 
+Check Out My Details :- NAME= ${name} EMAIL= ${email} LOCATION= ${location}!   PRODUCTURL= ${imageULR}`; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}${machn1}`;
 
   const handleLogin = () => {
