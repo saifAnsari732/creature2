@@ -3,7 +3,6 @@ import './Home.css';
 import machineryImage from '../public/mach1.jpg';
 import machineryImage2 from '../public/mach2.jpeg';
 import machineryImage3 from '../public/mach3.jpeg';
-// import machineryImage4 from '../public/mach4.jpg';
 import machineryImage5 from '../public/mach5.avif';
 // import machineryImage6 from '../public/mach6.avif';
 import machineryvideo from '../public/food-video.mp4';
