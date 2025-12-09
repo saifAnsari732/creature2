@@ -10,6 +10,8 @@ import machineryImage7 from '../public/mach7.png';
 import machineryImage8 from '../public/mach8.jpg';
 import machineryImage9 from '../public/mach9.avif';
 import machineryImage10 from '../public/mach10.jpg';
+// LOGO
+import logo from '../public/logo.png';
 
 
 import Footer from './Footer';
@@ -31,7 +33,8 @@ function Home() {
             {/* Header Section */}
             <header className="header">
                 <div className="header-content">
-                    <h1 className="logo">🏭 MachineHub</h1>
+                    <img src={logo} alt="MachineHub Logo" className="header-logo" />
+                    <h1 className="logo">MachineHub</h1>
                     <nav className="nav">
                         <a href="#home">Home</a>
                         <a href="#products">Products</a>
