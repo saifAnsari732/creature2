@@ -117,7 +117,7 @@ function Home() {
                             <img src={machineryImage} alt="Industrial Robot" />
                             {/* <span className="discount-badge">20% OFF</span> */}
                               <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v2} 
                               autoPlay 
                               loop 
@@ -150,7 +150,7 @@ function Home() {
                            
                             {/* <span className="discount-badge">20% OFF</span> */}
                               <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v3} 
                               autoPlay 
                               loop 
@@ -182,7 +182,7 @@ function Home() {
                             <img src={machineryImage5} alt="Industrial Robot" />
                             {/* <span className="discount-badge">30% OFF</span> */}
                               <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v4} 
                               autoPlay 
                               loop 
@@ -214,7 +214,7 @@ function Home() {
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">20% OFF</span> */}
                              <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v5} 
                               autoPlay 
                               loop 
@@ -246,7 +246,7 @@ function Home() {
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v3} 
                               autoPlay 
                               loop 
@@ -277,7 +277,7 @@ function Home() {
                             <img src={machineryImage6} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v3} 
                               autoPlay 
                               loop 
@@ -308,7 +308,7 @@ function Home() {
                             <img src={machineryImage7} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v4} 
                               autoPlay 
                               loop 
@@ -339,7 +339,7 @@ function Home() {
                             <img src={machineryImage8} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v2} 
                               autoPlay 
                               loop 
@@ -370,7 +370,7 @@ function Home() {
                             <img src={machineryImage9} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v5} 
                               autoPlay 
                               loop 
@@ -401,7 +401,7 @@ function Home() {
                             <img src={machineryImage10} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v1} 
                               autoPlay 
                               loop 
@@ -432,7 +432,7 @@ function Home() {
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
                                <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v3} 
                               autoPlay 
                               loop 
