@@ -983,9 +983,8 @@ body {
 
     .discount-badge {
         font-size: 0.65rem;
-        padding: 4px 6px;
-        top: 8px;
-        right: 8px;
+        padding: 8px ;
+   
     }
 
     .card-rating {
