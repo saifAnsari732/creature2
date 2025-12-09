@@ -38,10 +38,14 @@ function Home() {
                 <video 
                     src={machineryvideo} 
                     className="hero-video" 
-                    autoPlay 
-                    loop 
-                    muted
-                    playsInline
+                     muted               
+                     playsInline        
+                     preload="metadata"    
+                     webkit-playsinline="true" 
+                     x5-playsinline="true"    
+                     autoPlay            
+                     loop                 
+                     disablePictureInPicture 
                 ></video>
                 <div className="hero-overlay">
                     <div className="hero-text-content">
