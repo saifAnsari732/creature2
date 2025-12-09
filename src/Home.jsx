@@ -85,7 +85,7 @@ function Home() {
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">  </span> */}
                             <video 
-                            className='discount-badge h-12 rounded-full '
+                            className='discount-badge h-20 rounded-full '
                             src={v1} 
                               autoPlay 
                               loop 
