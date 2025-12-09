@@ -296,13 +296,13 @@ body {
     top: 1px;
     right: 1px;
     background: transparent;
-    /* background: linear-gradient(135deg, #272020 0%, #ee5a6f 100%); */
+    /* background: linear-gradient(135deg, #ffffff 0%, #9c9c9c 100%); */
     color: white;
-    padding: clamp(5px, 1vw, 6px) clamp(8px, 2vw, 10px);
+    /* padding: clamp(5px, 1vw, 6px) clamp(8px, 2vw, 10px); */
     border-radius: 20px;
     font-size: clamp(0.65rem, 1.5vw, 0.75rem);
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+    /* box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3); */
 }
 
 .card-content {
