@@ -16,7 +16,6 @@ function App() {
         <Route path="/LoginUI" element={<LoginUI />} />
    </Routes>
     </Router>
-{/* <Home/> */}
     </>
   )
 }

@@ -325,14 +325,197 @@ body {
     margin-top: 15px;
 }
 
+/* Hero bottom CTA */
+.hero-bottom-cta {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    background: #2c3e50; /* neutral dark */
+    color: #fff;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    z-index: 12;
+    text-decoration: none;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.hero-bottom-cta:hover {
+    transform: translateX(-50%) translateY(-2px);
+    background: #1f2a36;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Carousel common styles */
+.carousel-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem 0;
+    background: transparent;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: max-content;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 220px;
+}
+
+.slide-card {
+    background: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease;
+}
+
+.slide-card:hover { transform: translateY(-6px); }
+
+.slide-image { height: 140px; overflow: hidden; }
+.slide-image img{ width:100%; height:100%; object-fit:cover; display:block }
+.slide-info{ padding:0.6rem 0.8rem }
+.slide-info h4{ font-size:0.95rem; margin-bottom:0.25rem }
+.slide-info p{ font-size:0.8rem; color:#666 }
+
+/* Continuous marquee animations for two carousels */
+.carousel-one .carousel-track{ animation: marquee 18s linear infinite }
+/* carousel-two removed - only single carousel in use */
+
+@keyframes marquee {
+    0%{ transform: translateX(0) }
+    100%{ transform: translateX(-50%) }
+}
+
+/* make slides larger on small screens for better touch */
+@media (max-width: 420px){
+    .carousel-slide{ width: 180px }
+    .slide-image{ height: 180px }
+    .hero-bottom-cta{ bottom: 12px; padding: 0.5rem 1rem }
+}
+
+
 /* Products Section */
 .products {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    padding: clamp(2rem, 5vw, 4rem) 2rem;
+    background: #f7f7f7;
+    padding: clamp(1.5rem, 4vw, 3rem) 2rem;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
+
+/* Categories Section */
+.categories {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.25rem 1rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 12px 40px rgba(102,126,234,0.25);
+    position: relative;
+}
+
+.categories h2 {
+    font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.categories-grid {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 0.5rem 0;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for clean look */
+.categories-grid::-webkit-scrollbar {
+    height: 0;
+}
+
+.categories-grid {
+    scrollbar-width: none;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+    padding: 0.9rem 0.6rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(102,126,234,0.15);
+    border: 2px solid #667eea;
+    color: #1c2139;
+    transition: all 0.22s ease;
+    min-height: 160px;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 140px;
+    scroll-snap-align: center;
+}
+
+.category-image {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 6px solid #667eea;
+    box-shadow: 0 8px 20px rgba(102,126,234,0.25);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.category-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border-radius: 50%;
+}
+
+.category-name{
+    margin-top:0.8rem;
+    font-weight:900;
+    font-size:0.98rem;
+    text-align:center;
+    color: #667eea;
+    text-shadow: none;
+}
+
+/* anchor smooth scroll */
+:target{ scroll-margin-top: 110px; }
+
+/* Responsive adjustments for categories */
+@media (max-width: 768px) {
+    .category-image { width: 94px; height: 94px; }
+    .category-card { min-height: 140px; padding: 0.7rem 0.5rem; width: 130px; }
+}
+
+@media (max-width: 420px) {
+    .categories { padding: 0.8rem 0.6rem; }
+    .categories-grid { gap: 0.6rem; }
+    .category-image { width: 70px; height: 70px; border: 4px solid rgba(255,255,255,0.85); }
+    .category-name { font-size: 0.75rem; margin-top: 0.6rem; }
+    .category-card { min-height: 130px; padding: 0.5rem 0.4rem; width: 110px; }
+}
+
 
 .products h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
@@ -507,59 +690,11 @@ body {
     transform: translateY(-2px);
 }
 
-/* About Section */
-.about {
-    background: white;
-    padding: clamp(2rem, 5vw, 4rem) 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+/* Carousels removed - related styles deleted */
+@media (max-width: 420px){
+    .hero-bottom-cta{ bottom: 12px; padding: 0.5rem 1rem }
 }
 
-.about h2 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-    text-align: center;
-    margin-bottom: clamp(1.5rem, 5vw, 3rem);
-    color: #2c3e50;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(1.2rem, 3vw, 2rem);
-}
-
-.about-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: clamp(1.2rem, 4vw, 2rem);
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
-    transition: transform 0.3s;
-}
-
-.about-card:hover {
-    transform: translateY(-5px);
-}
-
-.about-card h3 {
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    margin-bottom: 1rem;
-}
-
-.about-card p {
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
-    line-height: 1.8;
-}
-
-/* Footer Section */
-.footer {
-    background: #2c3e50;
-    color: white;
-    padding: 3rem 2rem 1rem;
-    margin-top: 4rem;
-}
 
 .footer-content {
     max-width: 1200px;

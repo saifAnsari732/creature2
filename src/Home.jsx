@@ -10,6 +10,9 @@ import machineryImage7 from '../public/mach7.png';
 import machineryImage8 from '../public/mach8.jpg';
 import machineryImage9 from '../public/mach9.avif';
 import machineryImage10 from '../public/mach10.jpg';
+import machineryImage11 from '../public/mach10.jpg';
+import machineryImage12 from '../public/mach12.webp';
+import machineryImage13 from '../public/mach13.jpeg';
 // LOGO
 import logo from '../public/logo.png';
 
@@ -73,6 +76,38 @@ function Home() {
                         </div>
                     </div>
                 </div>
+                    {/* Hero bottom CTA button */}
+                    {/* <a href="#products" className="hero-bottom-cta" aria-label="Explore products">Explore Products</a> */}
+                </section>
+
+                {/* create categories a multiple card image circle form  */}
+  
+            {/* Categories Section */}
+            <section className="categories" id="categories">
+                <h2>Product Categories</h2>
+                <div className="categories-grid">
+                    {[
+                        { anchor: '#product-1', img: machineryImage, name: 'Industrial Robots' },
+                        { anchor: '#product-2', img: machineryImage2, name: 'Processing Machines' },
+                        { anchor: '#product-3', img: machineryImage3, name: 'Packaging Machines' },
+                        { anchor: '#product-4', img: machineryImage5, name: 'Mixers & Blenders' },
+                        { anchor: '#product-5', img: machineryImage6, name: 'Cutting Machines' },
+                        { anchor: '#product-6', img: machineryImage7, name: 'Conveyors' },
+                         { anchor: '#product-1', img: machineryImage8, name: 'Industrial Robots' },
+                        { anchor: '#product-2', img: machineryImage9, name: 'Processing Machines' },
+                        { anchor: '#product-3', img: machineryImage10, name: 'Packaging Machines' },
+                        { anchor: '#product-4', img: machineryImage11, name: 'Mixers & Blenders' },
+                        { anchor: '#product-5', img: machineryImage12, name: 'Cutting Machines' },
+                        { anchor: '#product-6', img: machineryImage13, name: 'Conveyors' }
+                    ].map((cat, i) => (
+                        <a key={`cat-${i}`} href={cat.anchor} className="category-card">
+                            <div className="category-image">
+                                <img src={cat.img} alt={cat.name} />
+                            </div>
+                            <div className="category-name">{cat.name}</div>
+                        </a>
+                    ))}
+                </div>
             </section>
 
             {/* Featured Products Section */}
@@ -80,7 +115,7 @@ function Home() {
                 <h2>Featured Machinery</h2>
                 <div className="products-grid">
                     {/* Card 1 */}
-                    <div className="beautiful-card">
+                    <div id="product-1" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">  </span> */}
@@ -112,7 +147,7 @@ function Home() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="beautiful-card">
+                    <div id="product-2" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage} alt="Industrial Robot" />
                             {/* <span className="discount-badge">20% OFF</span> */}
@@ -144,7 +179,7 @@ function Home() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="beautiful-card">
+                    <div id="product-3" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage3} alt="Industrial Robot" />
                            
@@ -177,7 +212,7 @@ function Home() {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="beautiful-card">
+                    <div id="product-4" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage5} alt="Industrial Robot" />
                             {/* <span className="discount-badge">30% OFF</span> */}
@@ -209,7 +244,7 @@ function Home() {
                     </div>
 
                     {/* Card 5 */}
-                    <div className="beautiful-card">
+                    <div id="product-5" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">20% OFF</span> */}
@@ -241,7 +276,7 @@ function Home() {
                     </div>
 
                     {/* Card 6 */}
-                    <div className="beautiful-card">
+                    <div id="product-6" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage2} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
@@ -271,8 +306,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                     {/* Card 6 */}
-                    <div className="beautiful-card">
+                     {/* Card 7 */}
+                    <div id="product-7" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage6} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
@@ -302,8 +337,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                     {/* Card 7 */}
-                    <div className="beautiful-card">
+                     {/* Card 8 */}
+                    <div id="product-8" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage7} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
@@ -333,8 +368,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                     {/* Card 8 */}
-                    <div className="beautiful-card">
+                     {/* Card 9 */}
+                    <div id="product-9" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage8} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
@@ -364,8 +399,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                     {/* Card 9 */}
-                    <div className="beautiful-card">
+                     {/* Card 10 */}
+                    <div id="product-10" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage9} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
@@ -395,8 +430,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                     {/* Card 10 */}
-                    <div className="beautiful-card">
+                     {/* Card 11 */}
+                    <div id="product-11" className="beautiful-card">
                         <div className="card-image-wrapper">
                             <img src={machineryImage10} alt="Industrial Robot" />
                             {/* <span className="discount-badge">10% OFF</span> */}
