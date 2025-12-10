@@ -92,13 +92,13 @@ function Home() {
                         { anchor: '#product-3', img: machineryImage3, name: 'Packaging Machines' },
                         { anchor: '#product-4', img: machineryImage5, name: 'Mixers & Blenders' },
                         { anchor: '#product-5', img: machineryImage6, name: 'Cutting Machines' },
-                        { anchor: '#product-6', img: machineryImage7, name: 'Conveyors' },
+                        { anchor: '#product-6', img: machineryImage7, name: 'Conveyors Machine' },
                          { anchor: '#product-1', img: machineryImage8, name: 'Industrial Robots' },
                         { anchor: '#product-2', img: machineryImage9, name: 'Processing Machines' },
                         { anchor: '#product-3', img: machineryImage10, name: 'Packaging Machines' },
                         { anchor: '#product-4', img: machineryImage11, name: 'Mixers & Blenders' },
                         { anchor: '#product-5', img: machineryImage12, name: 'Cutting Machines' },
-                        { anchor: '#product-6', img: machineryImage13, name: 'Conveyors' }
+                        { anchor: '#product-6', img: machineryImage13, name: 'Conveyors machine' }
                     ].map((cat, i) => (
                         <a key={`cat-${i}`} href={cat.anchor} className="category-card">
                             <div className="category-image">
